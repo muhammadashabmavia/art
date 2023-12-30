@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700&display=swap');
 
-nav.navbar.navbar-expand-lg.navbar-light.px-5 {
-  background-color: #ae2d2c;
+nav.navbar.navbar-expand-lg.navbar-light.px-5,.bg-light {
+  background-color: #f3fffc  !important;
 }
 
 html {
-  background: #333;
+  background: #f3fffc;
 }
 
 body {
-  background: #333 !important;
+  background: #f3fffc;
 }
 
 /* .card {
@@ -34,11 +34,12 @@ body {
 
 /*********** admin dashboard styling **********/
   .card{
-    background: #ae2d2c !important;
+    background: #ffffff;
     padding:20px;
     margin: 10px;
-    border-radius: 10px;
-    box-shadow: 8px 5px 5px #ae2d2c;
+    border-radius: 0;
+    box-shadow: 0px 0px 25px 0px #4365b357;
+    border: none;
   }
 
 /************************** for sidebar ***********************************/
@@ -51,7 +52,7 @@ body {
       z-index: 1; /* Stay on top */
       top: 0;
       left: 0;
-      background: #ae2d2c; /* Black*/
+      background: #5eb5d7; /* Black*/
       overflow-x: hidden; /* Disable horizontal scroll */
       padding-top: 60px; /* Place content 60px from the top */
       transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
@@ -75,7 +76,7 @@ body {
 
     /* When you mouse over the navigation links, change their color */
     .sidebar a:hover {
-      background-color: #333;
+      background-color: #4365b3;
     }
     
     /* Position and style the close button (top right corner) */
@@ -94,7 +95,7 @@ body {
       padding: 10px 15px;
       border: none;
       color: #fff;
-      background-color: #ae2d2c;
+      background-color: #5eb5d7;
     }
     
     .openbtn:hover {
@@ -335,4 +336,32 @@ body {
 .footer-hover:hover{
   color: #ECDAC9;
   text-decoration: none;
+}
+
+.card i::before {
+    color: #5eb5d7;
+}
+
+.card h4 {
+    font-size: 20px;
+    color: #333;
+    font-weight: 400;
+}
+
+.card h5 {
+    font-size: 18px;
+    color: #333;
+    font-weight: 400;
+}
+
+i.fa.fa-home {
+    color: #f3fffc;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link i:before {
+    color: #4365b3;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.px-5 img {
+  width: 30%;
 }

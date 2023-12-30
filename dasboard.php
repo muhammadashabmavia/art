@@ -33,8 +33,8 @@
         <div class="col-sm-3">
                 <div class="card">
                     <i class="fa fa-th-large mb-2" style="font-size: 70px;"></i>
-                    <h4 style="color:white;">Total Income</h4>
-                    <h5 style="color:white;">
+                    <h4>Total Income</h4>
+                    <h5 >
                     <?php
                        
                        $sql="SELECT * from category";
@@ -54,8 +54,8 @@
             <div class="col-sm-3">
                 <div class="card">
                     <i class="fa fa-users  mb-2" style="font-size: 70px;"></i>
-                    <h4 style="color:white;">Total Users</h4>
-                    <h5 style="color:white;">
+                    <h4>Total Users</h4>
+                    <h5>
                     <?php
                         $sql="SELECT * from users where isAdmin=0";
                         $result=$conn-> query($sql);
@@ -74,8 +74,8 @@
             <div class="col-sm-3">
                 <div class="card">
                     <i class="fa fa-th mb-2" style="font-size: 70px;"></i>
-                    <h4 style="color:white;">Total Purchase</h4>
-                    <h5 style="color:white;">
+                    <h4>Total Purchase</h4>
+                    <h5>
                     <?php
                        
                        $sql="SELECT * from product";
@@ -95,8 +95,8 @@
             <div class="col-sm-3">
                 <div class="card">
                     <i class="fa fa-list mb-2" style="font-size: 70px;"></i>
-                    <h4 style="color:white;">Total Artwork</h4>
-                    <h5 style="color:white;">
+                    <h4>Total Artwork</h4>
+                    <h5>
                     <?php
                        
                        $sql="SELECT * from orders";
