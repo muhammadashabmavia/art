@@ -18,7 +18,7 @@
                     <div class="info flex flex-items-column flex-items-space-between">
                       <div class="top flex flex-items-space-between">
                         <a href="#"></a>
-                        <i class="fal fa-heart add-to-favorites margin-t-8 margin-r-8 login"></i>
+                        <!-- <i class="far fa-heart"></i> -->
                       </div>
                       <div class="bottom padding-8 padding-t-5 flex flex-items-column flex-items-right">
                         <h6 class="margin-t-0 truncate-sm">codebox</h6>

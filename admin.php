@@ -22,13 +22,15 @@
 <body >
     
         <?php
-            include "./adminHeader.php";
-            include "./sidebar.php";
+            include "include/adminHeader.php";
+            include "include/adminsidebar.php";
            
-            include_once "./config/dbconnect.php";
+            include_once "./config/dbconnect.php";  
         ?>
 
-    <div id="main-content" class="container allContent-section py-4">
+    <div class="container-fluid">
+        <div class="row">
+        <div id="main-content" class="container allContent-section py-4">
         <div class="row">
         <div class="col-sm-3">
                 <div class="card">
@@ -119,22 +121,24 @@
        
             
         <?php
-            if (isset($_GET['category']) && $_GET['category'] == "success") {
-                echo '<script> alert("Category Successfully Added")</script>';
-            }else if (isset($_GET['category']) && $_GET['category'] == "error") {
-                echo '<script> alert("Adding Unsuccess")</script>';
-            }
-            if (isset($_GET['size']) && $_GET['size'] == "success") {
-                echo '<script> alert("Size Successfully Added")</script>';
-            }else if (isset($_GET['size']) && $_GET['size'] == "error") {
-                echo '<script> alert("Adding Unsuccess")</script>';
-            }
-            if (isset($_GET['variation']) && $_GET['variation'] == "success") {
-                echo '<script> alert("Variation Successfully Added")</script>';
-            }else if (isset($_GET['variation']) && $_GET['variation'] == "error") {
-                echo '<script> alert("Adding Unsuccess")</script>';
-            }
+            // if (isset($_GET['category']) && $_GET['category'] == "success") {
+            //     echo '<script> alert("Category Successfully Added")</script>';
+            // }else if (isset($_GET['category']) && $_GET['category'] == "error") {
+            //     echo '<script> alert("Adding Unsuccess")</script>';
+            // }
+            // if (isset($_GET['size']) && $_GET['size'] == "success") {
+            //     echo '<script> alert("Size Successfully Added")</script>';
+            // }else if (isset($_GET['size']) && $_GET['size'] == "error") {
+            //     echo '<script> alert("Adding Unsuccess")</script>';
+            // }
+            // if (isset($_GET['variation']) && $_GET['variation'] == "success") {
+            //     echo '<script> alert("Variation Successfully Added")</script>';
+            // }else if (isset($_GET['variation']) && $_GET['variation'] == "error") {
+            //     echo '<script> alert("Adding Unsuccess")</script>';
+            // }
         ?>
+        </div>
+    </div>
 
 
     <script type="text/javascript" src="./assets/js/ajaxWork.js"></script>    

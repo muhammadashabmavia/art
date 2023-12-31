@@ -1,8 +1,8 @@
+//.............Seller...........//
 
-
-function showProductItems(){  
+function showArtworks(){  
     $.ajax({
-        url:"./adminView/viewAllProducts.php",
+        url:"./sellerView/Artworks.php",
         method:"post",
         data:{record:1},
         success:function(data){
@@ -10,6 +10,80 @@ function showProductItems(){
         }
     });
 }
+
+function showUploadArtworks(){  
+    $.ajax({
+        url:"./sellerView/UploadArtworks.php",
+        method:"post",
+        data:{record:1},
+        success:function(data){
+            $('.allContent-section').html(data);
+        }
+    });
+}
+
+function showInvoice(){  
+    $.ajax({
+        url:"./sellerView/Invoice.php",
+        method:"post",
+        data:{record:1},
+        success:function(data){
+            $('.allContent-section').html(data);
+        }
+    });
+}
+
+//.............Seller...........//
+
+//.............admin..........//
+
+function showAllCustomers(){
+    $.ajax({
+        url:"./adminView/AllCustomers.php",
+        method:"post",
+        data:{record:1},
+        success:function(data){
+            $('.allContent-section').html(data);
+        }
+    });
+}
+
+function showArtworksRequest(){  
+    $.ajax({
+        url:"./adminView/ArtworksRequest.php",
+        method:"post",
+        data:{record:1},
+        success:function(data){
+            $('.allContent-section').html(data);
+        }
+    });
+}
+
+function showAvailableCategories(){  
+    $.ajax({
+        url:"./adminView/AvailableCategories.php",
+        method:"post",
+        data:{record:1},
+        success:function(data){
+            $('.allContent-section').html(data);
+        }
+    });
+}
+
+function showSale(){  
+    $.ajax({
+        url:"./adminView/Sale.php",
+        method:"post",
+        data:{record:1},
+        success:function(data){
+            $('.allContent-section').html(data);
+        }
+    });
+}
+
+//.............admin..........//
+
+
 function showCategory(){  
     $.ajax({
         url:"./adminView/viewCategories.php",
@@ -20,37 +94,10 @@ function showCategory(){
         }
     });
 }
-function showSizes(){  
-    $.ajax({
-        url:"./adminView/viewSizes.php",
-        method:"post",
-        data:{record:1},
-        success:function(data){
-            $('.allContent-section').html(data);
-        }
-    });
-}
-function showProductSizes(){  
-    $.ajax({
-        url:"./adminView/viewProductSizes.php",
-        method:"post",
-        data:{record:1},
-        success:function(data){
-            $('.allContent-section').html(data);
-        }
-    });
-}
 
-function showCustomers(){
-    $.ajax({
-        url:"./adminView/viewCustomers.php",
-        method:"post",
-        data:{record:1},
-        success:function(data){
-            $('.allContent-section').html(data);
-        }
-    });
-}
+
+
+
 
 function showOrders(){
     $.ajax({

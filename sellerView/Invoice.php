@@ -1,17 +1,29 @@
 
-<div >
-  <h2>Product Sizes Item</h2>
-  <table class="table ">
+<div>
+  <h2>Invoices</h2>
+  <div class="container-fluid">
+    <div class="row">
+      <h3>Pending Invoices</h3>
+    <table class="table ">
     <thead>
       <tr>
         <th class="text-center">S.N.</th>
         <th class="text-center">Product Name</th>
-        <th class="text-center">Size</th>
-        <th class="text-center">Stock Quantity</th>
+        <th class="text-center">Date</th>
+        <th class="text-center">Category</th>
         <th class="text-center" colspan="2">Action</th>
       </tr>
     </thead>
-    <?php
+    <tr>
+      <td>1</td>
+      <td>Ashab</td>
+      <td>31/12/2023</td>      
+      <td>1</td>     
+      <td><button class="btn btn-primary" style="height:40px" >Edit</button></td>
+      <td><button class="btn btn-danger" style="height:40px"  >Delete</button></td>
+      </tr>
+
+    <!-- <?php
       include_once "../config/dbconnect.php";
       $sql="SELECT * from product_size_variation v, product p, sizes s WHERE p.product_id=v.product_id AND v.size_id=s.size_id ";
       $result=$conn-> query($sql);
@@ -31,19 +43,65 @@
             $count=$count+1;
           }
         }
-      ?>
+      ?> -->
   </table>
+    </div>
+    <div class="row">
+      <h3>Clear Invoices</h3>
+    <table class="table ">
+    <thead>
+      <tr>
+        <th class="text-center">S.N.</th>
+        <th class="text-center">Product Name</th>
+        <th class="text-center">Date</th>
+        <th class="text-center">Category</th>
+        <th class="text-center" colspan="2">Action</th>
+      </tr>
+    </thead>
+    <tr>
+      <td>1</td>
+      <td>Ashab</td>
+      <td>31/12/2023</td>      
+      <td>1</td>     
+      <td><button class="btn btn-primary" style="height:40px" >Edit</button></td>
+      <td><button class="btn btn-danger" style="height:40px"  >Delete</button></td>
+      </tr>
 
-  <!-- Trigger the modal with a button -->
+    <!-- <?php
+      include_once "../config/dbconnect.php";
+      $sql="SELECT * from product_size_variation v, product p, sizes s WHERE p.product_id=v.product_id AND v.size_id=s.size_id ";
+      $result=$conn-> query($sql);
+      $count=1;
+      if ($result-> num_rows > 0){
+        while ($row=$result-> fetch_assoc()) {
+    ?>
+    <tr>
+      <td><?=$count?></td>
+      <td><?=$row["product_name"]?></td>
+      <td><?=$row["size_name"]?></td>      
+      <td><?=$row["quantity_in_stock"]?></td>     
+      <td><button class="btn btn-primary" style="height:40px" onclick="variationEditForm('<?=$row['variation_id']?>')">Edit</button></td>
+      <td><button class="btn btn-danger" style="height:40px"  onclick="variationDelete('<?=$row['variation_id']?>')">Delete</button></td>
+      </tr>
+      <?php
+            $count=$count+1;
+          }
+        }
+      ?> -->
+  </table>
+    </div>
+  </div>
+
+ <!---
   <button type="button" class="btn btn-secondary" style="height:40px" data-toggle="modal" data-target="#myModal">
     Add Size Variation
   </button>
 
-  <!-- Modal -->
+  
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
     
-      <!-- Modal content-->
+     
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">New Product Size Variation</h4>
@@ -103,7 +161,7 @@
       
     </div>
   </div>
-
+--->
   
 </div>
    

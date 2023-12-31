@@ -12,7 +12,7 @@
 		</form>
 	</div>
 	<div class="form-container sign-in-container">
-		<form action="./dasboard.php">
+		<form action="./seller.php">
 			<h1>Sign in</h1>
 			<span>or use your account</span>
 			<input type="email" placeholder="Email" required>

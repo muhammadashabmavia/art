@@ -1,15 +1,16 @@
 
 <div >
-  <h2>Product Items</h2>
+  <h2>ArtWork Request</h2>
   <table class="table ">
     <thead>
       <tr>
         <th class="text-center">S.N.</th>
         <th class="text-center">Product Image</th>
         <th class="text-center">Product Name</th>
-        <th class="text-center">Product Description</th>
-        <th class="text-center">Category Name</th>
-        <th class="text-center">Unit Price</th>
+        <th class="text-center">Sales</th>
+        <th class="text-center">Revenue</th>
+        <th class="text-center">Price</th>
+        <th class="text-center">Status</th>
         <th class="text-center" colspan="2">Action</th>
       </tr>
     </thead>
@@ -23,7 +24,7 @@
     ?>
     <tr>
       <td><?=$count?></td>
-      <td><img height='100px' src='<?=$row["product_image"]?>'></td>
+      <td><img height='100px' src=''></td>
       <td><?=$row["product_name"]?></td>
       <td><?=$row["product_desc"]?></td>      
       <td><?=$row["category_name"]?></td> 

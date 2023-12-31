@@ -9,7 +9,7 @@
 }
 
 body {
-	background: #f6f5f7;
+	background: #f3fffc;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -50,8 +50,8 @@ a {
 
 button {
 	border-radius: 20px;
-	border: 1px solid #333333;
-	background-color: #333333;
+	border: 1px solid #5eb5d7;
+	background-color: #5eb5d7;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -96,7 +96,7 @@ input {
 #container {
 	background-color: #fff;
 	border-radius: 10px;
-	box-shadow: 0 14px 28px #ae2d2c40, 0 10px 10px rgba(0,0,0,0.22);
+	box-shadow: 0 14px 28px #4365b3, 0 10px 10px #4365b3;
 	position: relative;
 	overflow: hidden;
 	width: 768px;
@@ -165,7 +165,7 @@ input {
 .overlay {
 	/* background: #FF416C; */
 	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-	background: linear-gradient(to right, #333333, #333333);
+	background: linear-gradient(to right, #5eb5d7, #5eb5d7);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
@@ -230,8 +230,8 @@ input {
 }
 
 footer {
-    background-color: #222;
-    color: #fff;
+    background-color: #4365b3;
+    color: #f3fffc;
     font-size: 14px;
     bottom: 0;
     position: fixed;
@@ -252,4 +252,9 @@ footer i {
 footer a {
     color: #3c97bf;
     text-decoration: none;
+}
+
+
+.sign-in-admin {
+    width: 100%;
 }

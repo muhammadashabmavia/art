@@ -16,15 +16,11 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <?php if(isset($_SESSION['user_id'])) { ?>
-                        <a class="nav-link" href="#" style="text-decoration:none;">
-                            <i class="fa fa-user me-3" style="font-size: 24px; color: #000;" aria-hidden="true"></i>
-                        </a>
-                    <?php } else { ?>
-                        <a class="nav-link" href="#" style="text-decoration:none;">
+                
+                <a class="nav-link" href="http://localhost/art/index.php" style="text-decoration:none;">
                             <i class="fa fa-sign-in me-3" style="font-size: 24px; color: #000;" aria-hidden="true"></i>
                         </a>
-                    <?php } ?>
+                    
                 </li>
             </ul>
         </div>

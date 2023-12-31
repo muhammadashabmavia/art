@@ -34,7 +34,7 @@ body {
 
 /*********** admin dashboard styling **********/
   .card{
-    background: #ffffff;
+    background: #5eb5d7;
     padding:20px;
     margin: 10px;
     border-radius: 0;
@@ -47,15 +47,19 @@ body {
   /* The sidebar menu */
   .sidebar {
       height: 100%; /* 100% Full-height */
-      width: 0; /* 0 width - change this with JavaScript */
-      position: fixed; /* Stay in place */
+       /* 0 width - change this with JavaScript */
+      width: 0;
+      position: absolute; /* Stay in place */
       z-index: 1; /* Stay on top */
       top: 0;
       left: 0;
       background: #5eb5d7; /* Black*/
       overflow-x: hidden; /* Disable horizontal scroll */
-      padding-top: 60px; /* Place content 60px from the top */
+      padding-top: 100px; /* Place content 60px from the top */
       transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      box-shadow: 0px 0px 20px 0px #4365b3;
     }
     
     /* The sidebar links */
@@ -83,9 +87,10 @@ body {
     .sidebar .closebtn {
       position: absolute;
       top: 0;
-      right: 2px;
+      right: 0;
       font-size: 34px;
       margin-left: 50px;
+      padding: 5px 20px;
     }
     
     /* The button used to open the sidebar */
@@ -339,18 +344,18 @@ body {
 }
 
 .card i::before {
-    color: #5eb5d7;
+    color: #f3fffc;
 }
 
 .card h4 {
     font-size: 20px;
-    color: #333;
+    color: #f3fffc;
     font-weight: 400;
 }
 
 .card h5 {
     font-size: 18px;
-    color: #333;
+    color: #f3fffc;
     font-weight: 400;
 }
 
@@ -364,4 +369,66 @@ i.fa.fa-home {
 
 nav.navbar.navbar-expand-lg.navbar-light.px-5 img {
   width: 30%;
+}
+
+div#main-content {
+  margin: 0 auto !important;
+  width: 100%;
+  max-width: 100%;
+}
+
+.sign-in-admin form {
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 30px;
+  height: 100%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.sign-in-admin form .form-group, .sign-in-admin form select,.sign-in-admin form input {
+  width: 100%;
+}
+
+.sign-in-admin form .form-group label {
+  text-align: left;
+  width: 100%;
+  padding: 15px 0px;
+}
+
+.sign-in-admin form select {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--bs-body-color);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: var(--bs-body-bg);
+  background-clip: padding-box;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+button#upload {
+  transition: 200ms ease-in-out;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  color: #fff;
+  background-color: #5eb5d7;
+  border-color: #5eb5d7;
+  border-width: 1px;
+  width: 20%;
+  margin-top: 20px;
+  font-weight: 500;
+  border-radius: 30px;
 }

@@ -1,6 +1,6 @@
 
 <div >
-  <h3>Available Sizes</h3>
+  <h3>Available Categories</h3>
   <table class="table ">
     <thead>
       <tr>
@@ -32,7 +32,7 @@
 
   <!-- Trigger the modal with a button -->
   <button type="button" class="btn btn-secondary" style="height:40px" data-toggle="modal" data-target="#myModal">
-    Add Size
+  Add Categories
   </button>
 
   <!-- Modal -->
@@ -48,11 +48,11 @@
         <div class="modal-body">
           <form  enctype='multipart/form-data' action="./controller/addSizeController.php" method="POST">
             <div class="form-group">
-              <label for="size">Size Number:</label>
+              <label for="size">Categories</label>
               <input type="text" class="form-control" name="size" required>
             </div>
             <div class="form-group">
-              <button type="submit" class="btn btn-secondary" name="upload" style="height:40px">Add Size</button>
+              <button type="submit" class="btn btn-secondary" name="upload" style="height:40px">Add Category</button>
             </div>
           </form>
 
